@@ -1,0 +1,3 @@
+const SUPPORTED_CURRENCIES = ["KES", "USD"];
+
+module.exports = SUPPORTED_CURRENCIES;
