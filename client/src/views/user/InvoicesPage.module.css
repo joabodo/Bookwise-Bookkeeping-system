@@ -1,0 +1,13 @@
+.actionBtn {
+  grid-column-start: -1;
+}
+
+.emptystateWrapper {
+  grid-column: 1 / -1;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}

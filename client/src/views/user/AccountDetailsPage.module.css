@@ -1,0 +1,110 @@
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  max-width: 320px;
+}
+
+.info h2 {
+  padding-bottom: 4px;
+  border-bottom: 4px solid var(--blue);
+  margin-bottom: 8px;
+}
+
+.dropdownBtn {
+  border: 2px solid var(--oxford-blue);
+  padding: 8px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  border-radius: 8px;
+  margin-top: 16px;
+  background-color: var(--oxford-blue);
+  margin-left: -1.5%;
+}
+
+.dropdownItem {
+  background-color: var(--white-100);
+  color: var(--oxford-blue);
+  width: 100%;
+  padding: 8px 24px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: hsla(var(--white-100-HSL), 0.9);
+}
+
+.dropdownItem:first-child {
+  border-radius: 6px 6px 0 0;
+}
+.dropdownItem:last-child {
+  border-radius: 0 0 6px 6px;
+}
+
+.dropdownItem:not(:last-child) {
+  margin-bottom: 2px;
+}
+
+.summaries {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+}
+
+.summaryCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.summaryCard.expense {
+  background-color: var(--error-red);
+  color: var(--white-100);
+}
+.summaryCard.income {
+  background-color: var(--success-green);
+  color: var(--white-100);
+}
+
+.summaryCard .icon {
+  font-size: 48px;
+  opacity: 0.6;
+}
+
+.summary {
+  width: fit-content;
+}
+
+.summary h2 {
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.summary h2 span {
+  font-size: 16px;
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.summary p {
+  color: var(--white-100);
+  font-size: 14px;
+  width: max-content;
+}

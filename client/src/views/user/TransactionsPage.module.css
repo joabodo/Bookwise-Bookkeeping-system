@@ -1,0 +1,11 @@
+.actionBtn {
+  grid-column-start: -1;
+}
+
+.searchBar {
+  grid-column: span 4;
+}
+
+.emptystateWrapper {
+  grid-column: 1 / -1;
+}

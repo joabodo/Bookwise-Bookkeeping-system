@@ -1,0 +1,43 @@
+.cashflow {
+  grid-column: span 8;
+  grid-row: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  min-height: 399px;
+}
+
+.cashflow .cashflowHeader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cashflow h3 {
+  line-height: 1;
+}
+
+.cashflow .lineChartContainer {
+  width: 100%;
+  height: 245px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: hsla(0, 100%, 0%, 0.15);
+}
+
+.figureCard {
+  grid-column: span 4 / -1;
+}
+
+.figureCard .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}

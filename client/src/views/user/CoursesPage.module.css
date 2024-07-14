@@ -1,0 +1,16 @@
+.header {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchWrapper {
+  width: 33%;
+  /* Responsive Styles */
+  @apply lg:w-[calc(50%-24px)] md:w-[calc(57%-24px)] sm:w-[calc(86%-24px)];
+}
+
+.featuredCardWrapper {
+  grid-column: span 6;
+}
