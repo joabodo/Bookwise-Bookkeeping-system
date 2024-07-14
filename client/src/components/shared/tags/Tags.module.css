@@ -1,0 +1,49 @@
+.tagsContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tagItem {
+  display: flex;
+  padding: 2px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  letter-spacing: 0.12px;
+  text-wrap: nowrap;
+  color: var(--tag-item-text-color);
+}
+
+.fill {
+  background-color: var(--tag-item-bg-color);
+}
+
+.outline {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px var(--tag-item-border-color);
+  color: var(--tag-item-border-color);
+}
+
+.purple {
+  --tag-item-bg-color: var(--purple);
+  --tag-item-text-color: var(--white-100);
+  --tag-item-border-color: var(--purple);
+}
+.lime {
+  --tag-item-bg-color: var(--lime);
+  --tag-item-text-color: var(--black-100);
+  --tag-item-border-color: var(--lime);
+}
+
+.oxfordBlue {
+  --tag-item-bg-color: var(--oxford-blue);
+  --tag-item-text-color: var(--white-100);
+  --tag-item-border-color: var(--oxford-blue);
+}

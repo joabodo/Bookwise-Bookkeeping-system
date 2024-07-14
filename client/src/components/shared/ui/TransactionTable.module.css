@@ -1,0 +1,18 @@
+.td_type {
+  border-radius: 24px;
+  padding: 4px 12px;
+  width: max-content;
+}
+
+.td_type.income {
+  background-color: hsla(var(--success-green-HSL), 0.2);
+  color: var(--success-green);
+}
+.td_type.expense {
+  background-color: hsla(var(--error-red-HSL), 0.2);
+  color: var(--error-red);
+}
+.td_type.transfer {
+  background-color: hsla(var(--deep-blue-HSL), 0.2);
+  color: var(--deep-blue);
+}

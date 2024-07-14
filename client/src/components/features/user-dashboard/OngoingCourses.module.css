@@ -1,0 +1,67 @@
+.container {
+  grid-column: span 8;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* Responsive Styles */
+  @apply lg:col-span-6 md:col-span-full;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ongoingCourses {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 24px;
+  /* Responsive Styles */
+  @apply md:flex md:gap-[24px] md:overflow-x-auto md:pb-[24px];
+}
+
+.courseCard {
+  display: flex;
+  grid-column: span 4;
+  padding: 16px;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: 8px;
+  background: var(--white-100);
+  box-shadow: var(--shadow-sm);
+  /* Responsive Styles */
+  @apply lg:col-span-full md:min-w-[calc(40%-12px)] md:p-[24px] md:flex-col sm:p-[14px] sm:w-[calc(60%-12px)] sm:min-w-[224px] xsm:min-w-[160px] xsm:p-[0] xsm:bg-transparent;
+}
+
+.image {
+  width: 64px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 4px;
+  /* Responsive Styles */
+  @apply md:w-full md:aspect-video;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  /* Responsive Styles */
+  @apply md:gap-[16px];
+}
+
+.info h4 {
+  color: var(--black-100);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  /* Responsive Styles */
+  @apply md:line-clamp-2;
+}

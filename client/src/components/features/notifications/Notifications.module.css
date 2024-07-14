@@ -1,0 +1,22 @@
+.notifications {
+  position: relative;
+}
+
+.bell {
+  font-size: 24px;
+  color: var(--oxford-blue);
+  position: relative;
+}
+
+.hasNotification::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--blue);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-50%);
+}

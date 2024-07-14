@@ -1,0 +1,111 @@
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.form button[type="submit"] {
+  margin-top: 16px;
+  grid-column: span 4;
+}
+
+.inputWrapper {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.disabled .label,
+.disabled input {
+  opacity: 0.5;
+}
+
+.disabled input {
+  background-color: var(--grey-200);
+  color: var(--grey-300);
+}
+
+.inputWrapper.half {
+  grid-column: span 2;
+  @apply sm:col-span-full;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0.2px;
+  margin-bottom: 8px;
+  color: var(--black-100);
+
+  /* Responsive Styles */
+  @apply sm:text-[14px];
+}
+
+.inputWrapper .input,
+.inputWrapper input {
+  font-size: 14px;
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.input:focus,
+.passwordWrapper:has(input:focus) {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--blue);
+}
+
+.input[aria-invalid="true"],
+.passwordWrapper:has(input[aria-invalid="true"]) {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--error-red);
+}
+
+.input[aria-invalid="true"]:focus,
+.passwordWrapper:has(input[aria-invalid="true"]:focus) {
+  border-color: transparent;
+  box-shadow: inset 0 0 0 2px var(--blue);
+}
+
+.passwordWrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding-left: 4px !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+  overflow: hidden;
+}
+
+.passwordWrapper input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 0;
+}
+
+.passwordWrapper .toggle {
+  padding: 0;
+  color: var(--grey-200);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: 4px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  color: var(--grey-200);
+}
+
+.error {
+  color: var(--error-red);
+}

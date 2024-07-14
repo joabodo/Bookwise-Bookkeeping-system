@@ -1,0 +1,31 @@
+.accountCard {
+  grid-column: span 4;
+  min-height: 194px;
+}
+
+.accountCard:nth-child(3n + 1) {
+  background-color: var(--deep-blue);
+  color: var(--white-100);
+}
+.accountCard:nth-child(3n + 2) {
+  background-color: var(--white-100);
+  color: var(--black-100);
+}
+.accountCard:nth-child(3n) {
+  background-color: var(--oxford-blue);
+  color: var(--white-100);
+}
+
+.accountCard .header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accountCard .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}

@@ -1,0 +1,47 @@
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.logo {
+  width: 8vw;
+  max-width: 60px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @apply sm:w-[12vw];
+}
+
+.logo svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinnerWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  width: calc(24vw);
+  max-width: 160px;
+  stroke-width: 1;
+  height: auto;
+  animation: rotate-animation 1s ease-out 0s infinite;
+  @apply sm:w-[32vw];
+}

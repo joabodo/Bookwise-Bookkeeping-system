@@ -1,0 +1,41 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+@keyframes rotate-animation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinnerWrapper {
+  height: 60%;
+  max-height: 64px;
+  min-height: 24px;
+  aspect-ratio: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  opacity: 0.5;
+  height: 100%;
+  width: auto;
+  animation: rotate-animation 1s ease-out 0s infinite;
+}
+
+.white {
+  color: white;
+}
+
+.black {
+  color: black;
+}

@@ -1,0 +1,19 @@
+.continueLearning {
+  display: flex;
+  padding: 32px 48px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  grid-column: span 4;
+  border-radius: 24px;
+  color: white;
+  background: linear-gradient(
+      0deg,
+      rgba(13, 31, 45, 0.8) 0%,
+      rgba(13, 31, 45, 0.8) 100%
+    ),
+    url("src/assets/bible-study.jpg") lightgray 50% / cover no-repeat;
+  /* Responsive Styles */
+  @apply lg:col-span-full lg:mb-[24px] sm:px-[32px] xsm:px-[24px];
+}
