@@ -1,0 +1,20 @@
+.page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100vw;
+}
+
+.page main {
+  --padding: 24px;
+  padding-top: calc(var(--safe-area-inset-top) + var(--padding));
+  padding-bottom: calc(var(--safe-area-inset-bottom) + var(--padding));
+  padding-left: calc(var(--safe-area-inset-left) + var(--padding));
+  padding-right: calc(var(--safe-area-inset-right) + var(--padding));
+  flex-grow: 1;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Responsive Styles */
+  @apply xsm:[--padding:16px];
+}
